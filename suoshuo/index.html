@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		<h1>六月是个猪头</h1>	
-		<p>六月是个大猪头</p>
-	</body>
-</html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王者荣耀底层逻辑教学</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>前言</h1>
+    <p>本教程并不会教导你具体的分路该怎么玩，这需要你自己去思考。本教材旨在说明一些王者荣耀游戏的底层原理。</p>
+
+    <h1>胜利的条件</h1>
+    <p>王者荣耀获胜的条件是<strong>推掉敌方水晶</strong>。所有动作的目的都是为了推掉对方的水晶。</p>
+
+    <h1>如何获得胜利</h1>
+
+    <h3>你必须十分的清楚你自己在做什么</h3>
+    <p>你只要十分清楚的知道自己在做什么，为什么做才能做出正确的抉择。而事实上大部分人不知道为什么要这么做，他只是不断的重复一个错误的茫然的决策。</p>
+    <p>大部分人会选择跟随队友的步伐来进行游戏，但或许你的队友也并不清楚他需要做什么。而如果不停的跟随队友步伐，那么你将失去对游戏胜利天平的掌控，你的天平将掌控在队友的手上。</p>
+    <p>如果你不清楚自己为什么这么做，你就是在玩一场赌博游戏，输赢全靠运气，而事实上，这个游戏的匹配机制决定了，运气根本靠不住。</p>
+
+    <h3>你必须十分的清楚这么做的收益是什么</h3>
+    <p>如果你不清楚自己的决策的收益，你将无法进行正确的决策。正如上文所说的，如果你不知道这么做的收益，你就是在赌博。</p>
+    <p>你需要了解你的各种决策的收益与风险以便做出最正确的，收益最高的决策。</p>
+
+    <h3>你必须知道这是一个推塔游戏</h3>
+    <p>王者荣耀是一个推塔游戏，这是一个显而易见的公理。你所做的一切决策都是为推掉对面水晶而服务的！我知道这是大部分人都知道的观点，但是我在这里还是这么写了，我是要告诉你们，大部分根本就不知道这是一个推塔游戏，他们只是不停的在打架，而不知道为什么打架，仿佛只要打架打赢了游戏就可以获得胜利，可事实不是这样的。</p>
+    <p>大部分人打完架（我们在此假设他打赢了吧）发现根本没有事可以做，这是因为他们根本不知道为什么而打架，而打了一场没有意义的架。</p>
+    <p>事实上，<strong>发育是为了推塔，打架是为了推塔，进野区为为了推塔，控龙也是为了推塔。</strong>王者荣耀所有的决策都是为了推塔而服务的。</p>
+
+    <h3>你必须知道如何拉开经济差</h3>
+    <p>你需要知道如何拉开经济差，这里我说的是整个团队的经济差，而不是个人的。拉开团队经济差的关键在于<strong>野区</strong>，（当然双方的人头也是）。我们双方都有兵线和野区，都可以
